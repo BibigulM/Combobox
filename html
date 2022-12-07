@@ -1,0 +1,23 @@
+<template>
+  <lightning-card title="Combobox " icon-name="standard:case"> 
+        <lightning-combobox  class="slds-p-around_large"
+        options={options} 
+        placeholder="Select your title" 
+        label="Title Selection" 
+        onchange={comboboxHandler}
+        >
+    </lightning-combobox>
+
+ 
+    <template if:true={optionsPicklistData}>
+    <lightning-combobox  class="slds-p-around_large"
+        options={optionsPicklisData} 
+        placeholder="Select your title" 
+        label="Picklist Selection" onchange={comboboxHandler}>
+     </lightning-combobox>
+
+</template>
+
+</lightning-card> 
+ 
+</template>
